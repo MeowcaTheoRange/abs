@@ -1,0 +1,51 @@
+:root {
+  --color: white;
+  --character: #400000;
+  --character-next: #402000;
+}
+
+body {
+  background: radial-gradient(
+      at 85% 85%,
+      var(--character-next) 0%,
+      transparent 50%
+    ),
+    radial-gradient(at 15% 15%, var(--character) 0%, transparent 50%), black;
+  background-position: 0 0;
+  color: var(--color);
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Markup */
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h1::before {
+  content: "| ";
+}
+
+h1::after {
+  content: " |";
+}
+
+a {
+  color: var(--color);
+}
+
+hr {
+  height: 1px;
+  width: 50px;
+  background-color: var(--color);
+  border: none;
+  opacity: 0.5;
+}
+b {
+  font-weight: 800;
+}
