@@ -12,7 +12,7 @@ export default async function Page({ params }: { params: { code: string } }) {
       {
         name: params.code,
       },
-      { $inc: { traffic: 1 } }
+      { $inc: { traffic: 1 }, $set: { lastHit: Date.now() } }
     );
   return redirect(link.link);
 }

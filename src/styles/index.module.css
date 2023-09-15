@@ -11,26 +11,3 @@
   max-width: 768px;
   text-align: center;
 }
-
-/* List */
-
-div.list {
-  display: inline-flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 8px;
-}
-
-a.listItemLink {
-  text-decoration: none;
-}
-
-div.listItem {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-a.listItemLink:hover span.listItemName {
-  text-decoration: underline;
-}
