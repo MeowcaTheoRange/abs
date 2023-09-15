@@ -1,5 +1,5 @@
-import { mainDB } from "@/lib/db/mongodb";
 import { FindCursor, Filter as MDBFilter, ObjectId, Sort } from "mongodb";
+import { mainDB } from "./mdb";
 
 export type WithId<TSchema> = Omit<TSchema, "_id"> & {
   _id: ObjectId;
